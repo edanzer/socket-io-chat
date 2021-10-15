@@ -1,0 +1,54 @@
+@import "../styles/variables";
+
+#user-section {
+  width: 100%;
+  background: $lightBlue;
+  color: $white;
+  padding: 20px 40px;
+  .user-name {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .logged-in {
+    display: flex;
+    align-items: center;
+  }
+  #user-form {
+    box-sizing: border-box;
+    display: flex;
+  }
+  #user-input {
+    padding: 6px 12px;
+    outline: none;
+    font-size: $bodyFont;
+    flex-basis: 75%;
+    height: 40px;
+    border: none;
+  }
+  #user-submit,
+  #log-out,
+  #clear-messages {
+    border: none;
+    padding: 6px 12px;
+    background: $yellow;
+    flex-basis: 25%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 40px;
+    margin-left: -1px;
+    &:hover {
+      cursor: pointer;
+      background: $darkYellow;
+    }
+  }
+  #log-out,
+  #clear-messages {
+    margin-left: 4px;
+    flex-basis: 50px;
+    height: 30px;
+  }
+  #clear-messages {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../styles/variables";
+
+.messages {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 67%;
+  flex-wrap: wrap;
+  .not-in-chat {
+    text-align: center;
+    padding: 100px 20px;
+    font-size: $heading1;
+    width: 100%;
+    color: gray;
+  }
+  .message-bubble {
+    margin-bottom: 10px;
+    background: #eeeeee;
+    padding: 10px 20px;
+    width: 67%;
+    border-radius: 10px;
+    &.current-user {
+      margin-left: auto;
+      background: #e8f4f9;
+    }
+  }
+  .user {
+    margin-right: 6px;
+    font-weight: 700;
+    color: $lightBlue;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../styles/variables";
+
+.chat,
+.chat-container {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+}
+
+.chat {
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-bottom: 3px solid $yellow;
+  border-radius: 0 0 5px 5px;
+}
+
+.chat-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 40px 30px 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .chat {
+    border-radius: 0;
+  }
+}

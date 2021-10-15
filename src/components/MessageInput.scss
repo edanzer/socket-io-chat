@@ -1,0 +1,28 @@
+@import "../styles/variables";
+
+#message-input-form {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  #message-input {
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 0;
+    outline: none;
+    flex-basis: 75%;
+  }
+  #message-submit {
+    border-radius: 0;
+    border: none;
+    background: $lightBlue;
+    color: $white;
+    flex-basis: 25%;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 40px;
+    &:disabled {
+      background: gray;
+    }
+  }
+}

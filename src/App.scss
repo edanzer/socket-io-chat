@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import "./styles/variables";
+
+html,
+body,
+div,
+input,
+p,
+h1,
+h2 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  background: radial-gradient($lightBlue, $darkBlue);
+}
+
+.app {
+  display: flex;
+  flex-flow: column;
+  width: 700px;
+  max-width: 100%;
+  margin: 20px auto;
+  box-shadow: 0 0 8px 4px rgb(0 0 0 / 10%);
+}
+
+.app-header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  background: $darkBlue;
+  color: $white;
+  border-top: 5px solid $yellow;
+  border-radius: 5px 5px 0 0;
+}
+
+.app-motto {
+  margin: 0 15px;
+  font-weight: 700;
+  font-size: $heading2;
+}
+
+.app-logo {
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 50%;
+  background: $white;
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    margin: 0;
+  }
+  .app-header {
+      border-radius: 0;
+  }
+}
